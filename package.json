@@ -40,12 +40,12 @@
     "molecule",
     "tree"
   ],
-  "author": "Alec Lloyd Probert",
+  "author": "GN",
   "repository": {
     "type": "git",
-    "url": "https://github.com/graphieros/vue-data-ui"
+    "url": "https://github.com/goncanegis/vue-data-ui"
   },
-  "homepage": "https://vue-data-ui.graphieros.com/",
+  "homepage": "https://github.com/goncanegis/vue-data-ui",
   "license": "MIT",
   "files": [
     "dist"
@@ -62,7 +62,7 @@
   "scripts": {
     "dev": "vite",
     "clean": "node cleanup.cjs",
-    "build": "npm run clean && npm i && vite build --mode production && node copy-types.cjs",
+    "build": "npm run clean && npm i && vite build --mode production && node copy-types.cjs ",
     "prod": "npm run test && npx cypress run --component && npm run clean && vite build --mode production && node copy-types.cjs && npm i",
     "build:dev": "npm run build && npm run dev",
     "test": "vitest --run",
