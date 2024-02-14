@@ -94,12 +94,12 @@
                     <defs :data-cy="`xy-def-bar-${i}`">
                         <linearGradient :id="`rectGradient_pos_${i}_${uniqueId}`" x2="0%" y2="100%">
                             <stop offset="0%" :stop-color="serie.color"/>
-                            <stop offset="62%" :stop-color="`${shiftHue(serie.color, 0.02)}DE`"/>
-                            <stop offset="100%" :stop-color="`${shiftHue(serie.color, 0.05)}66`"/>
+                            <stop offset="62%" :stop-color="serie.color2 ?? `${shiftHue(serie.color, 0.02)}DE`"/>
+                            <stop offset="100%" :stop-color="serie.color3 ?? `${shiftHue(serie.color, 0.05)}66`"/>
                         </linearGradient>
                         <linearGradient :id="`rectGradient_neg_${i}_${uniqueId}`" x2="0%" y2="100%">
-                            <stop offset="0%" :stop-color="`${shiftHue(serie.color, 0.05)}66`"/>
-                            <stop offset="38%" :stop-color="`${shiftHue(serie.color, 0.02)}DE`"/>
+                            <stop offset="0%" :stop-color="serie.color3 ?? `${shiftHue(serie.color, 0.05)}66`"/>
+                            <stop offset="38%" :stop-color="serie.color2 ?? `${shiftHue(serie.color, 0.02)}DE`"/>
                             <stop offset="100%" :stop-color="serie.color"/>
                         </linearGradient>
                     </defs>
